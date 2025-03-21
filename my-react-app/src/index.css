@@ -50,7 +50,6 @@
   text-shadow: 2px 2px 4px rgba(185, 169, 169, 0.1); /* Subtle shadow for depth */
   text-transform: capitalize; /* Capitalizes the first letter for better aesthetics */
   background: linear-gradient(90deg, #63b5f6, #6753da); /* Gradient background */
-  -webkit-background-clip: text; /* Clips the gradient to the text */
   -webkit-text-fill-color: transparent; /* Makes the text color transparent */
 }
 
