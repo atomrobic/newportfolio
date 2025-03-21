@@ -524,13 +524,14 @@ const App = () => {
 
         {/* View Resume Button */}
         <a
-  href="/assets/video/Akhil_cv.pdf" // Replace with the path to your resume
+  href="/public/AKHIL_cv.pdf" // Ensure this is the correct path to your resume
+  download="AKHIL_cv.pdf" // Triggers file download instead of opening it
   target="_blank"
   rel="noopener noreferrer"
   className="bg-gradient-to-r from-blue-400 to-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:from-blue-400 hover:to-blue-500 transition-all duration-300 flex items-center space-x-2"
 >
   <FaFileDownload size={22} className="animate-bounce" /> {/* Resume download icon */}
-  <span className="font-semibold">View Resume</span>
+  <span className="font-semibold">Download Resume</span>
 </a>
 
     </motion.p>
