@@ -49,7 +49,7 @@
   letter-spacing: 0.05em; /* Adds spacing between letters for elegance */
   text-shadow: 2px 2px 4px rgba(185, 169, 169, 0.1); /* Subtle shadow for depth */
   text-transform: capitalize; /* Capitalizes the first letter for better aesthetics */
-  background: linear-gradient(90deg, #63b5f6, #6753da); /* Gradient background */
+  background: linear-gradient(90deg, #aab0b5, #6753da); /* Gradient background */
   -webkit-text-fill-color: transparent; /* Makes the text color transparent */
 }
 

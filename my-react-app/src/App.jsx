@@ -96,10 +96,13 @@ const App = () => {
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
             <span
-  className={`text-xl font-bold text-blue-400 transition-all duration-300 ${activeSection !== "home" ? "text-base" : "text-xl"} font-lobster custom-style`}
+  className={`font-bold transition-all duration-300 font-lobster ${
+    activeSection === "home" ? "text-xl" : "text-base"
+  }`}
 >
   Akhil.A
 </span>
+
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">

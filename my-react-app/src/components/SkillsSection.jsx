@@ -25,12 +25,12 @@ const SkillsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-1xl font-bold text-center  text-white"
+        className="text-2xl font-bold text-center text-white"
       >
         My Skills
       </motion.h2>
 
-      {/* Skills in One Line */}
+      {/* Skills with Animated Icons */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -40,12 +40,10 @@ const SkillsSection = () => {
           visible: {
             opacity: 1,
             y: 0,
-            transition: {
-              staggerChildren: 0.2,
-            },
+            transition: { staggerChildren: 1 }, // Slow sequential appearance
           },
         }}
-        className="flex flex-wrap justify-center items-center gap-2"
+        className="flex flex-wrap justify-center items-center gap-3 mt-4"
       >
         {skills.map((skill, index) => (
           <motion.div
@@ -54,10 +52,26 @@ const SkillsSection = () => {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 0.6 }}
-            className="bg-gray-700 rounded-lg shadow-md px-2 py-2 flex items-center space-x-1"
+            transition={{ duration: 0.5 }}
+            className="bg-gray-700 rounded-lg shadow-md px-4 py-3 flex items-center space-x-2 relative"
           >
-            {skill.icon}
+            <motion.div
+              animate={{
+                boxShadow: [
+                  "0px 0px 0px rgba(255,255,255,0)",
+                  "0px 0px 12px rgba(35, 128, 210, 0.8)",
+                  "0px 0px 0px rgba(255,255,255,0)",
+                ],
+                scale: [1, 1.2, 1], // Zoom in and out effect
+              }}
+              transition={{
+                repeat: Infinity,
+                duration: 4,
+                delay: index * 1, // Slower one-by-one glowing effect
+              }}
+            >
+              {skill.icon}
+            </motion.div>
             <span className="text-gray-100 font-medium text-lg">{skill.name}</span>
           </motion.div>
         ))}
