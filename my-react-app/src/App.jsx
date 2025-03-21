@@ -6,17 +6,15 @@ import "./index.css"; // Import the CSS file
 import { Card,CardContent} from "./components/card";
 import boyAnimation from "./assets/boy-coding.json"; // Add your Lottie file
 import Lottie from "react-lottie-player"; // ✅ Correct Import
-import videoSrc from "./assets/video/myvideos.mp4";
 import SkillsSection from "./components/SkillsSection";
 import akhilAppuImage from './assets/video/akhil appu.jpg';
 import ContactSection from "./components/ContactSection";
-import ViewCounter from "./components/ViewCounter";
 
 <img src={akhilAppuImage} alt="Akhil Appu" />;
 const App = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       sections.forEach((section) => {
@@ -441,7 +439,6 @@ const App = () => {
     View Details <ArrowRight size={16} className="ml-1" />
   </button>
 </a>
-<ViewCounter/>
                 </div>
               </motion.div>
             ))}
