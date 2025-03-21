@@ -9,6 +9,8 @@ import Lottie from "react-lottie-player"; // ✅ Correct Import
 import SkillsSection from "./components/SkillsSection";
 import akhilAppuImage from './assets/video/akhil appu.jpg';
 import ContactSection from "./components/ContactSection";
+import videoSrc from './assets/video/myvideos.mp4';
+
 
 <img src={akhilAppuImage} alt="Akhil Appu" />;
 const App = () => {
