@@ -9,7 +9,6 @@ import Lottie from "react-lottie-player"; // ✅ Correct Import
 import SkillsSection from "./components/SkillsSection";
 import akhilAppuImage from './assets/video/akhil appu.jpg';
 import ContactSection from "./components/ContactSection";
-import videoSrc from './assets/video/myvideos.mp4';
 
 
 <img src={akhilAppuImage} alt="Akhil Appu" />;
@@ -314,12 +313,14 @@ const App = () => {
     </div>
 </motion.div>
 </section>
+
 <section
   id="about"
   className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-15 lg:px-5 py-12 text-white bg-gray-900"
 >
   <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl">
-  <Card className="flex-1  bg-gray-800 rounded-lg shadow-lg text-center">
+    {/* Video Card */}
+    <Card className="flex-1 bg-gray-800 rounded-lg shadow-lg text-center">
       <CardContent className="flex flex-col items-center">
         <div className="w-full h-80 bg-black rounded-lg flex items-center justify-center overflow-hidden">
           <video
@@ -330,8 +331,8 @@ const App = () => {
             controls
             poster="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           >
-            <source src={videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
+<source src="/videos/myvideos.mp4" type="video/mp4" />
+Your browser does not support the video tag.
           </video>
         </div>
       </CardContent>
@@ -340,27 +341,21 @@ const App = () => {
 
     {/* About Content */}
     <Card className="flex-1 p-6 bg-gray-800 rounded-lg shadow-lg">
-
-    <div className="lottie-container">
-    <Lottie
-      loop
-      animationData={boyAnimation}
-      play
-      className="lottie-animation"
-    />
-  </div>
+      <div className="lottie-container">
+        <Lottie loop animationData={boyAnimation} play className="lottie-animation" />
+      </div>
       <CardContent>
-        <h2 className="text-4xl font-extrabold font-serif text-gray-400 mb-4 text-center">About Me</h2>
+        <h2 className="text-4xl font-extrabold font-serif text-gray-400 mb-4 text-center">
+          About Me
+        </h2>
         <p className="text-gray-300 text-lg leading-relaxed text-center">
           Hi, I'm <span className="font-bold text-white">Akhil</span>, a passionate 
           <span className="text-blue-400"> full-stack developer</span> specializing in 
-          <span className="text-green-400"> React</span> and <span className="text-yellow-400">python&Django</span>. 
+          <span className="text-green-400"> React</span> and <span className="text-yellow-400">Python & Django</span>. 
           I love building interactive and dynamic web applications.
-          
         </p>
       </CardContent>
     </Card>
-
   </div>
 </section>
 
