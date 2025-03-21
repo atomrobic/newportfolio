@@ -39,14 +39,14 @@ const App = () => {
       title: "Food Ordering App",
       description: "A full-stack application for ordering food online with payment integration.",
       tags: ["React", "Django", "Python", ],
-      link: "https://github.com/atomrobic/", // Project link
+      link: "https://github.com/atomrobic/my-app-food", // Project link
     },
     {
       id: 2,
       title: "Personal Blog Platform",
       description: "A custom blog platform with content management system.",
       tags: ["React", "Django", "Tailwind CSS"],
-      link: "https://github.com/atomrobic/", // Project link
+      link: "https://github.com/atomrobic/my-blog-", // Project link
 
     },
     {
@@ -62,7 +62,7 @@ const App = () => {
       title: "Hospital Management System",
       description: "An administrative tool for managing hospital resources and patients.",
       tags: ["Django", "React", "Database Design"],
-      link: "https://github.com/your-username/food-ordering-app", // Project link
+      link: "https://github.com/atomrobic/hosptl_mang", // Project link
 
     },
     {
@@ -70,7 +70,7 @@ const App = () => {
       title: "Career Portal",
       description: "Job listing and application platform for employers and job seekers.",
       tags: ["React", "Django", "Authentication"],
-      link: "https://github.com/atomrobic/", // Project link
+      link: "https://github.com/atomrobic/frontend-job-site", // Project link
 
     },
     {
@@ -78,7 +78,7 @@ const App = () => {
       title: "E-Learning",
       description: "student enroll the course and view the chapter",
       tags: ["React", "Django", "Authentication(jwt)"],
-      link: "https://github.com/atomrobic/", // Project link
+      link: "https://github.com/atomrobic/learning_management-_system-", // Project link
 
     },
   ];
@@ -331,7 +331,7 @@ const App = () => {
             controls
             poster="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           >
-<source src="/videos/myvideos.mp4" type="video/mp4" />
+<source src="/public/myvideos.mp4" type="video/mp4" />
 Your browser does not support the video tag.
           </video>
         </div>
@@ -361,7 +361,7 @@ Your browser does not support the video tag.
 
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4 bg-gray-900">
+      <section id="projects" className="py-20 px-4 bg-gradient-to-r from-gray-900 to-gray-800 ">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
           <motion.h2
@@ -369,7 +369,7 @@ Your browser does not support the video tag.
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-3xl font-bold mb-2 text-center text-white"
+            className="text-3xl font-bold mb-10 text-center text-white"
           >
             My Projects
           </motion.h2>
@@ -516,16 +516,15 @@ Your browser does not support the video tag.
       Currently, I am a <span className="font-bold text-white">Freelance Developer</span>, helping businesses 
       bring their ideas to life with efficient and dynamic web solutions.
 
-        {/* View Resume Button */}
-        <a
-  href="/public/AKHIL_cv.pdf" // Ensure this is the correct path to your resume
-  download="AKHIL_cv.pdf" // Triggers file download instead of opening it
+      <a
+  href="/AKHIL_cv.pdf"
+  download="AKHIL_cv.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-gradient-to-r from-blue-400 to-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:from-blue-400 hover:to-blue-500 transition-all duration-300 flex items-center space-x-2"
+  className="bg-gradient-to-r from-blue-400 to-red-500 text-white px-4 py-4 text-sm rounded-md shadow hover:from-blue-400 hover:to-blue-500 transition-all duration-300 flex items-center space-x-1 w-32 justify-center"
 >
-  <FaFileDownload size={22} className="animate-bounce" /> {/* Resume download icon */}
-  <span className="font-semibold">Download Resume</span>
+  <FaFileDownload size={16} className="animate-bounce" /> 
+  <span className="font-medium">Download</span>
 </a>
 
     </motion.p>

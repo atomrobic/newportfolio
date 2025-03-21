@@ -36,20 +36,20 @@ const SkillsSection = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={{
-          hidden: { opacity: 0, y: 20 },
+          hidden: { opacity: 0, y: 10 },
           visible: {
             opacity: 1,
             y: 0,
             transition: { staggerChildren: 0.2 }, // Sequential animation
           },
         }}
-        className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6 justify-center"
+        className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-2 justify-center"
       >
         {skills.map((skill, index) => (
           <motion.div
             key={index}
             variants={{
-              hidden: { opacity: 0, y: 20 },
+              hidden: { opacity: 0, y: 10 },
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.5 }}
@@ -59,7 +59,7 @@ const SkillsSection = () => {
               animate={{
                 boxShadow: [
                   "0px 0px 0px rgba(255,255,255,0)",
-                  "0px 0px 12px rgba(35, 128, 210, 0.8)",
+                  "0px 0px 12px rgba(35, 128, 210, 0.05)",
                   "0px 0px 0px rgba(255,255,255,0)",
                 ],
                 scale: [1, 1.2, 1], // Slow zoom in and out
